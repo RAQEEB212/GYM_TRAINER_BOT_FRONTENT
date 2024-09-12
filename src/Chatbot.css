@@ -1,0 +1,103 @@
+/* src/Chatbot.css */
+
+/* New Chat Button */
+.new-chat-button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    margin: 15px auto; /* Center the button horizontally */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px; /* Make the button text larger */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    display: block; /* Ensures it's centered */
+}
+
+.new-chat-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Chat Container */
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 600px; /* Slightly increased height for a larger chat window */
+    background-color: #f9f9f9;
+}
+
+.chat-history {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ccc;
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    font-size: 16px; /* Adjust the font size */
+    line-height: 1.6; /* Adjust line spacing for better readability */
+}
+
+.user-message {
+    background-color: #d1e7dd;
+    align-self: flex-end;
+}
+
+.bot-message {
+    background-color: #f8d7da;
+    align-self: flex-start;
+    white-space: pre-wrap; /* Ensures long lines wrap while preserving whitespace and line breaks */
+    word-wrap: break-word;
+    font-family: monospace;
+    margin: 0;
+    padding: 15px; /* Add more padding to improve readability */
+    max-width: 80%; /* Limit the width to make long texts easier to read */
+}
+
+pre {
+    white-space: pre-wrap; /* Ensures long lines wrap while preserving whitespace and line breaks */
+    word-wrap: break-word;
+    font-family: monospace;
+    margin: 0;
+}
+
+/* Input Field and Send Button */
+.input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #f0f0f0; /* Add a background color for contrast */
+    border-top: 1px solid #ccc;
+}
+
+input {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px; /* Make the input text larger */
+    margin-right: 10px; /* Space between input and send button */
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
